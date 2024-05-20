@@ -1,0 +1,18 @@
+/*Header*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+header .tittle{
+    font-family: "Neue Machina", sans-serif;
+    text-align: center;
+}
