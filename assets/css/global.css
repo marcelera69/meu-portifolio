@@ -13,8 +13,7 @@
 body{
     background-color: black;
     color: white;
+    position: relative;
+    height: 99vh;
 }
 
-.main{
-    padding: 1rem;
-}
