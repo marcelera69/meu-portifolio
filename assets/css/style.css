@@ -1,11 +1,4 @@
 /*Header*/
-.main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 header{
     display: flex;
     flex-direction: column;
@@ -19,6 +12,47 @@ header .photo{
 }
 
 header .tittle{
-    font-family: "Neue Machina", sans-serif;
     text-align: center;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.information p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .1rem;
+    margin: .5rem;
+    font-size: 1.25rem;
+}
+
+.information p::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(/assets/img/icons/person_24dp_FILL0_wght400_GRAD0_opsz24.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.information .job::before{
+    background-image: url(/assets/img/icons/person_24dp_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+.information .phone::before{
+    background-image: url(/assets/img/icons/call_24dp_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+.information .email::before{
+    background-image: url(/assets/img/icons/mail_24dp_FILL0_wght400_GRAD0_opsz24.svg);
+}
+
+.information .location::before{
+    background-image: url(/assets/img/icons/location_on_24dp_FILL0_wght400_GRAD0_opsz24.svg);
 }
