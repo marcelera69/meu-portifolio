@@ -13,24 +13,9 @@
 body{
     background-color: black;
     color: white;
-    position: relative;
-    height: 98vh;
+    width: 100%;
+    height: 100%;
 }
 
-.main{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 95%;
-    max-width: 800px;
-    padding: 1rem;
-
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.856);
-
-}
 
 

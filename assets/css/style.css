@@ -1,8 +1,44 @@
+.background{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 98vh;
+}
+
+.main{
+    position: absolute;
+
+    width: 93%;
+    margin: 1rem;
+    padding: 1rem;
+
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.856);
+
+}
+
 /*Header*/
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+header::after{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    content: '';
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+
+    background-image: url(/assets/img/icons/tresPontos.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header .photo{
@@ -11,8 +47,9 @@ header .photo{
     border-radius: 50%;
 }
 
-header .tittle{
+header .title{
     text-align: center;
+    font-size: 1.8rem;
 }
 
 .information{
@@ -28,7 +65,7 @@ header .tittle{
     align-items: center;
     gap: .1rem;
     margin: .5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .information p::before{
@@ -57,3 +94,33 @@ header .tittle{
     background-image: url(/assets/img/icons/location_on_24dp_FILL0_wght400_GRAD0_opsz24.svg);
 }
 
+@media only screen and (min-width: 768px){
+    .main{
+        width: 97%;
+        max-width: 1024px;
+    }
+
+    header{
+        flex-direction: row;
+        display: grid;
+        grid-template-areas: 
+            "photo title"
+            "photo information"
+        ;
+    }
+
+    header .photo{
+        grid-area: photo;
+        margin: 0 auto;
+    }
+
+    header .title{
+        grid-area: title;
+        text-align: start;
+        max-width: 220px;
+    }
+
+    header .information{
+        grid-area: information;
+    }
+}
