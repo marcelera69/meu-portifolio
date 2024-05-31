@@ -19,5 +19,11 @@ body{
     height: 100%;
 }
 
+a{
+    color: white;
+}
 
+a:hover{
+    text-decoration: underline;
+}
 
