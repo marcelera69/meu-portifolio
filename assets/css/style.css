@@ -8,12 +8,11 @@
 .main{
     position: absolute;
 
-    width: 93%;
     margin: 1rem;
     padding: 1rem;
 
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 28px;
     background-color: rgba(0, 0, 0, 0.856);
 
 }
@@ -97,7 +96,7 @@ header .title{
 @media only screen and (min-width: 768px){
     .main{
         width: 97%;
-        max-width: 1024px;
+        max-width: 900px;
     }
 
     header{
