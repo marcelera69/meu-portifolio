@@ -31,6 +31,17 @@
     border: none;
 }
 
+.acordeon .trigger h2{
+    font-size: 1.5rem;
+    max-width: min-content;
+}
+
+@media only screen and (min-width: 480px){
+    .acordeon .trigger h2{
+        max-width: max-content;
+    }
+}
+
 .acordeon .trigger:hover{
     cursor: pointer;
 }
@@ -80,3 +91,4 @@
     opacity: 1;
     padding: 0 1rem 1rem 2rem;
 }
+
